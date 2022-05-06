@@ -1,7 +1,7 @@
-import { Fragment } from 'react';
-import ReactDOM from 'react-dom';
+import { Fragment } from "react";
+import ReactDOM from "react-dom";
 
-import classes from './Modal.module.scss';
+import classes from "./Modal.module.scss";
 
 const Backdrop = (props) => {
   return <div className={classes.backdrop} />;
@@ -15,7 +15,7 @@ const ModalOverlay = (props) => {
   );
 };
 
-const portalElement = document.getElementById('overlays');
+const portalElement = document.getElementById("overlays");
 
 const Modal = (props) => {
   return (
