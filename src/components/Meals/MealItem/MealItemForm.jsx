@@ -19,6 +19,8 @@ const MealItemForm = (props) => {
     ) {
       setAmountIsValid(false);
       return;
+    } else {
+      setAmountIsValid(true)
     }
 
     props.onAddToCart(enteredAmountNumber);
@@ -32,8 +34,8 @@ const MealItemForm = (props) => {
         input={{
           id: "amount_" + props.id,
           type: "number",
-          min: 1,
-          max: 10,
+          // min: 1,
+          // max: 10,
           step: 1,
           defaultValue: 1,
         }}
